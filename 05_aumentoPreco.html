@@ -7,12 +7,16 @@
         //- até 1500(inclusive): aumento de 10 %
         //- acima de 1500: aumento de 5 %
     
-    //Entrada
+    let preco = Number(prompt(`Informe o preço do produto`).replace(`,`,`.`).trim())
+    let resultado = "";
+
+    resultado = preco <= 280 ? preco = (preco * 0.20) + preco: 
+    preco <= 700 ? preco = (preco * 0.15) + preco :
+    preco <= 1500 ? preco = (preco *0.10) + preco : 
+    preco = (preco * 0.05) + preco
+    document.write(`O valor do produto será ${resultado} reais`)
 
 
-    //Processamento
 
-    
-    //Saída
 
 </script>

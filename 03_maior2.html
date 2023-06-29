@@ -3,12 +3,14 @@
     //Problema: Maior 2
     //Construa um algoritmo que leia dois números inteiros. Verifique qual dos dois números é maior e o escreva.
 
-    //Entrada
+    let numero = Number(prompt("Informe um número inteiro").trim())
+    let numero2 = Number(prompt("Informe um outro número inteiro").trim())
+    numero = Math.trunc(numero)
+    numero2 = Math.trunc(numero2)
 
-    
-    //Processamento
+    resultado = numero > numero2 ? `O número ${numero} é maior que ${numero2}.` : `O número ${numero2} é maior que ${numero}`
+    document.write(resultado)
 
-    
-    //Saída
+
     
 </script>

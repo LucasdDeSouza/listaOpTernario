@@ -7,12 +7,17 @@
     // - cães de porte médio: fator 6
     // - cães grandes: fator 7.
 
-    //Entrada
+    const porte = prompt(`Informe o porte do seu cachorro. (P) para pequeno, (M) para médio e (G) para grande`).toUpperCase()
+    let idade = Number(prompt(`Informe a quantos anos o cachorro tem em anos humanos`))
+
+   let resultado = (porte === "P") ? `A idade do seu cachorro é de ${idade *5}`:
+    (porte === "M") ? `A idade do seu cachorro é de ${idade *6}`:
+    (porte === "G") ? `A idade do seu cachorro é de ${idade *7}`:
+    `Burro do shrek`
 
 
-    //Processamento
+    document.write(resultado)
 
-    
-    //Saída
+
 
 </script>
