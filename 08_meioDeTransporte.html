@@ -5,13 +5,24 @@
     // Peça também ao programa para o usuário informar o preço do transporte público que deverá pagar para se deslocar ao trabalho diariamente.
     // Verifique qual é o meio de transporte mais barato e apresente em tela, especificando quanto custará para ir e voltar do trabalho diariamente.
 
-    //Entrada
+    const litro = Number(prompt(`Informe o preço do litro do combustível`).replace(`,`,`.`))
+    const litro2 = Number(prompt(`Informe quantos litros de combustível você gasta para ir ao trabalho`).replace(`,`,`.`))
+    const tp = Number(prompt(`Informe o preço para descolar para ao trabalho diariamente usando transporte público`).replace(`,`,`.`))
+
+    litro3 = litro * litro2 
+    litro4 = litro3 + litro3
+    tp2 = tp + tp
+
+    resultado = (litro4 < tp2) ? `O meio de transporte privado (carro / moto) é mais barato que o meio de transporte público e custará ${litro4} reais para ir e voltar`:
+    (litro4 > tp2) ? `O meio de transporte público é mais barato que o meio de transporte privado (carro /  moto) e custará ${tp2} reais  para ir e voltar` :
+    `Inválido`
+
+    document.write(resultado)
 
 
-    //Processamento
 
-    
-    //Saída
+
+
 
     
 </script>

@@ -7,12 +7,17 @@
     // Se o total de horas trabalhadas ultrapassar 60 horas, haverá adicional de 30%.
     // Apresente o salário final recebido pelo funcionário semanalmente e o preço de cada hora trabalhada.
 
-    //Entrada
+   const horas = Number(prompt(`Informe quantas horas você trabalha semanalmente`).replace(`,`,`.`))
+   const valor = Number(prompt(`Informe quanto você recebe por hora trabalhada`).replace(`,`,`.`))
 
+   salfinal = (horas *valor)
+   adic = (horas *(valor*0.20))
+   adic2 = (horas *(valor*0.30))
 
-    //Processamento
+   resultado = (horas <= 45) ? `Não haverá adicional, o salário final da semana será ${salfinal} reais`:
+   (horas <= 60) ? `Haverá um adicional de 20%, o salário final da semana será ${salfinal + adic} reais, recebendo ${(valor *0.20) + valor} reais por dia`:
+   (horas > 60) ? `Haverá um adicional de 30%, o salário final da semana será ${salfinal + adic2} reais, recebendo ${(valor *0.30) + valor} reais por dia`:
+   `Inválido`
 
-    
-    //Saída
-
+   document.write(resultado)
 </script>
